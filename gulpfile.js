@@ -5,12 +5,13 @@
 ////////////////////////////////////////
 // CONFIGURATION
 
+
 global.config = {
 
 	// Server config
 
 	browsersyncProxyURL: "wordpress-sandbox.nicolas-g.ct.webcd.lan", // put your wordpress dev URL here
-	serverport: 3000,
+	serverport: 3002,
 	openBrowser: false,
 	openBrowsers: ["google chrome", "firefox"],
 
@@ -233,6 +234,7 @@ gulp.task("templates", function() {
 
 gulp.task("serve", function() {
   browserSync({
+    port: config.serverport,
     server: {
       baseDir: "./"
     },
