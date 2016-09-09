@@ -1,6 +1,6 @@
 {
   "name": "tlf-base",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Base stuff for toute-la-franchise.com mini-sites",
   "main": "index.html",
   "scripts": {
