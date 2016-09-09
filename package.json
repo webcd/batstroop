@@ -1,7 +1,7 @@
 {
-  "name": "tlf-base",
+  "name": "batstroop",
   "version": "0.1.0",
-  "description": "Base stuff for toute-la-franchise.com mini-sites",
+  "description": "A minimal frontend Sass library",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
