@@ -1,0 +1,99 @@
+// LENGTH UNITS HELPERS
+
+$px-by-rem-ratio: 10;  // By convention, shouldn't change
+
+// STRIP UNIT
+
+// See: https://css-tricks.com/snippets/sass/strip-unit-function/
+
+/// Remove the unit of a length
+/// @param {Number} $number - Number to remove unit from
+/// @return {Number} - Unitless number
+@function strip-unit($number) {
+
+  @if type-of($number) == 'number' and not unitless($number) {
+    @return $number / ($number * 0 + 1);
+  }
+  @return $number;
+}
+
+
+// PIXELS AND REM CONVERSION
+
+@function px2rem($value, $strip-unit: "no-strip") {
+
+  @if type-of($value) == 'number' {
+    $v: 0;
+
+    @if unitless($value) {
+      $v: ($value / 10 * 1rem);
+    } @else {
+      $v: ($value / 10px * 1rem);
+    }
+
+    @if $strip-unit == 'strip' {
+      @return strip-unit($v);
+    } @else {
+      @return $v;
+    }
+
+  } @else { @error "ERROR: function px2rem() needs a number value!"; }
+}
+
+@function rem2px($value, $strip-unit: "no-strip") {
+  @if type-of($value) == 'number' {
+    $v: 0;
+
+    @if unitless($value) {
+      $v: ($value * 10px);
+    } @else {
+      $v: (strip-unit($value) * 10px);
+    }
+
+    @if $strip-unit == 'strip' {
+      @return strip-unit($v);
+    } @else {
+      @return $v;
+    }
+
+  } @else { @error "ERROR: function rem2px() needs a number value!"; }
+}
+
+// TESTS
+
+// @warn px2rem(48);
+// @warn px2rem(48px);
+// @warn px2rem(48, 'strip');
+// @warn px2rem(48px, 'strip');
+// @warn rem2px(3.2);
+// @warn rem2px(3.2rem);
+// @warn rem2px(3.2, 'strip');
+// @warn rem2px(3.2rem, 'strip');
+
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  font-family: $font-family-base;
+}
+
+
+h1, .h1 { font-size: $font-size-h1; font-weight: $font-weight-h1; color: $color-h1 }
+h2, .h2 { font-size: $font-size-h2; font-weight: $font-weight-h2; color: $color-h2 }
+h3, .h3 { font-size: $font-size-h3; font-weight: $font-weight-h3; color: $color-h3 }
+h4, .h4 { font-size: $font-size-h4; font-weight: $font-weight-h4; color: $color-h4 }
+h5, .h5 { font-size: $font-size-h5; font-weight: $font-weight-h5; color: $color-h5 }
+h6, .h6 { font-size: $font-size-h6; font-weight: $font-weight-h6; color: $color-h6 }
+
+
+.big {
+  font-size: $font-size-large;
+}
+
+.small {
+  font-size: $font-size-small;
+}

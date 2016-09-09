@@ -1,0 +1,54 @@
+.sg-fixed-ratios {
+
+  .fixed-ratio {
+    background-color: $gray;
+    color: white;
+    margin-bottom: $gutter;
+  }
+}
+
+.sg-color-blocks {
+  > * {
+    padding: $gutter-quarter;
+
+    span {
+      background-color: white;
+    }
+  }
+
+  @include bp('sm') {
+    display: flex;
+    flex-wrap: wrap;
+
+    > * {
+      flex: 0 0 (100% / 3);
+      min-height: 10rem;
+
+      &:nth-child(4) {
+        flex: 0 0 100%;
+      }
+
+      @include bp('md') {
+        flex: 0 0 (100% / 7) !important;
+        min-height: 10rem;
+      }
+    }
+  }
+
+}
+
+.sg-buttons {
+
+  .btn {
+    display: inline-block;
+    margin-right: $gutter-half;
+  }
+}
+
+.sg-grid {
+
+  > * {
+    background-color: $gray-darker;
+    color: white;
+  }
+}

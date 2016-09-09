@@ -1,0 +1,287 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="dist/css/main.css" />
+  </head>
+
+  <body>
+
+    <div class="site-wrapper">
+
+      <header class="site-header">
+        <section class="wrapper wrapper--pre-header">
+          <div class="container">
+            <div class="pre-header">[PRE-HEADER]</div>
+          </div>
+        </section>
+        <section class="wrapper wrapper--header">
+          <div class="container">
+            <div class="header">[HEADER]</div>
+          </div>
+        </section>
+        <section class="wrapper wrapper--post-header">
+          <div class="container">
+            <div class="post-header">[POST-HEADER]</div>
+          </div>
+        </section>
+      </header>
+
+      <main class="site-content">
+        <div class="container">
+
+          <!-- STYLEGUIDE MARKUP -->
+
+          <h1>TLF Base - Styleguide</h1>
+
+          <h2>Typography</h2>
+
+          <h3>Headers</h3>
+
+          <section class="flexrow flexrow--gutter">
+            <article class="flex-sm-6">
+              <h1>Header H1</h1>
+              <h1>Header H1<br/>on multiple lines</h1>
+              <h2>Header H2</h2>
+              <h2>Header H2<br/>on multiple lines</h2>
+            </article>
+            <article class="flex-sm-6">
+              <h3>Header H3</h3>
+              <h3>Header H3<br/>on multiple lines</h3>
+              <h4>Header H4</h4>
+              <h4>Header H4<br/>on multiple lines</h4>
+              <h5>Header H5</h5>
+              <h5>Header H5<br/>on multiple lines</h5>
+              <h6>Header H6</h6>
+              <h6>Header H6<br/>on multiple lines</h6>
+            </article>
+          </section>
+
+
+          <h3>Paragraphs</h3>
+
+          <h4>Normal size</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nesciunt dolorem omnis velit tempora sit ducimus quae nam magni animi qui reprehenderit, assumenda distinctio ea dolores. Assumenda inventore, blanditiis saepe fuga soluta magnam cumque, quaerat sunt aspernatur fugit accusamus ut reiciendis vero suscipit provident nam recusandae dolorem amet a mollitia?</p>
+          <h4>Big size</h4>
+          <p class="big">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nesciunt dolorem omnis velit tempora sit ducimus quae nam magni animi qui reprehenderit, assumenda distinctio ea dolores. Assumenda inventore, blanditiis saepe fuga soluta magnam cumque, quaerat sunt aspernatur fugit accusamus ut reiciendis vero suscipit provident nam recusandae dolorem amet a mollitia?</p>
+          <h4>Small size</h4>
+          <p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nesciunt dolorem omnis velit tempora sit ducimus quae nam magni animi qui reprehenderit, assumenda distinctio ea dolores. Assumenda inventore, blanditiis saepe fuga soluta magnam cumque, quaerat sunt aspernatur fugit accusamus ut reiciendis vero suscipit provident nam recusandae dolorem amet a mollitia?</p>
+
+
+          <h2>Forms</h2>
+
+          <form class="flexform" action="">
+            <div class="form-group">
+              <label class="form-group__label flex-sm-4" for="#id1">Label #1</label>
+              <div class="form-group__input flex-sm-8">
+                <input type="text" id="id1" placeholder="placeholder #1">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-group__label flex-sm-4" for="#id2">Label #2 is very very long and will span on two lines</label>
+              <div class="form-group__input flex-sm-8">
+                <input type="text" id="id2" placeholder="placeholder #2" required>
+              </div>
+            </div>
+            <div class="form-group form-group--required">
+              <label class="form-group__label flex-sm-4" for="id3">Label #3 (required)</label>
+              <div class="form-group__input flex-sm-8">
+                <input type="text" id="id3" placeholder="placeholder #3">
+              </div>
+            </div>
+            <div class="form-group form-group--disabled">
+              <label class="form-group__label flex-sm-4" for="id13">Label #13 (disabled)</label>
+              <div class="form-group__input flex-sm-8">
+                <input type="text" id="id13" placeholder="placeholder #13" disabled>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-group__label flex-sm-4" for="#id4">Label #4</label>
+              <div class="form-group__input flex-sm-8">
+                <textarea id="id4" placeholder="placeholder #4"></textarea>
+              </div>
+            </div>
+            <div class="form-group form-group--select">
+              <label class="form-group__label flex-sm-4" for="id9">Select label</label>
+              <div class="form-group__input flex-sm-8">
+                <select id="id9">
+                  <option>Foo</option>
+                  <option>Bar</option>
+                  <option>Baz</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group form-group--checkbox">
+              <span class="form-group__label flex-sm-4">Fake label</span>
+              <div class="form-group__input flex-sm-8">
+                <div class="input-block">
+                  <input type="checkbox" id="id10">
+                  <label for="id10">Label #10</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group form-group--radio">
+              <span class="form-group__label flex-sm-4">Fake label</span>
+              <div class="form-group__input flex-sm-8">
+                <div class="input-block">
+                  <input type="radio" name="radios" id="id6">
+                  <label for="id6">Label #6</label>
+                </div>
+                <div class="input-block">
+                  <input type="radio" name="radios" id="id7">
+                  <label for="id7">Label #7</label>
+                </div>
+                <div class="input-block">
+                  <input type="radio" name="radios" id="id8">
+                  <label for="id8">Label #8</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group form-group--radio form-group--inline">
+              <span class="form-group__label flex-sm-4">Inline radios</span>
+              <div class="form-group__input flex-sm-8">
+                <div class="input-block">
+                  <input type="radio" name="radioss" id="id16">
+                  <label for="id16">Label #16</label>
+                </div>
+                <div class="input-block">
+                  <input type="radio" name="radioss" id="id17">
+                  <label for="id17">Label #17</label>
+                </div>
+                <div class="input-block">
+                  <input type="radio" name="radioss" id="id18">
+                  <label for="id18">Label #18</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group form-group--submit">
+              <button type="submit" class="btn btn-primary">Submit!</button>
+            </div>
+          </form>
+
+
+          <h2>Color palette</h2>
+
+          <h3>Grays</h3>
+          <section class="sg-color-blocks">
+          <div class="gray-lightest"><span>.gray-lightest</span></div>
+          <div class="gray-lighter"><span>.gray-lighter</span></div>
+          <div class="gray-light"><span>.gray-light</span></div>
+          <div class="gray"><span>.gray</span></div>
+          <div class="gray-dark"><span>.gray-dark</span></div>
+          <div class="gray-darker"><span>.gray-darker</span></div>
+          <div class="gray-darkest"><span>.gray-darkest</span></div>
+          </section>
+          <h3>Primary color</h3>
+          <section class="sg-color-blocks">
+          <div class="primary-lightest"><span>.primary-lightest</span></div>
+          <div class="primary-lighter"><span>.primary-lighter</span></div>
+          <div class="primary-light"><span>.primary-light</span></div>
+          <div class="primary"><span>.primary</span></div>
+          <div class="primary-dark"><span>.primary-dark</span></div>
+          <div class="primary-darker"><span>.primary-darker</span></div>
+          <div class="primary-darkest"><span>.primary-darkest</span></div>
+          </section>
+          <h3>Secondary color</h3>
+          <section class="sg-color-blocks">
+          <div class="secondary-lightest"><span>.secondary-lightest</span></div>
+          <div class="secondary-lighter"><span>.secondary-lighter</span></div>
+          <div class="secondary-light"><span>.secondary-light</span></div>
+          <div class="secondary"><span>.secondary</span></div>
+          <div class="secondary-dark"><span>.secondary-dark</span></div>
+          <div class="secondary-darker"><span>.secondary-darker</span></div>
+          <div class="secondary-darkest"><span>.secondary-darkest</span></div>
+          </section>
+          <h3>Ternary color</h3>
+          <section class="sg-color-blocks">
+          <div class="ternary-lightest"><span>.ternary-lightest</span></div>
+          <div class="ternary-lighter"><span>.ternary-lighter</span></div>
+          <div class="ternary-light"><span>.ternary-light</span></div>
+          <div class="ternary"><span>.ternary</span></div>
+          <div class="ternary-dark"><span>.ternary-dark</span></div>
+          <div class="ternary-darker"><span>.ternary-darker</span></div>
+          <div class="ternary-darkest"><span>.ternary-darkest</span></div>
+          </section>
+
+          <h2>Buttons</h2>
+
+          <h3>Colored buttons</h3>
+          <section class="sg-buttons">
+          <button class="btn btn-default ripple">default</button><button class="btn btn-primary ripple">primary</button><button class="btn btn-secondary ripple">secondary</button><button class="btn btn-ternary ripple">ternary</button><button class="btn btn-default disabled ripple">disabled</button><br>
+          </section>
+          <h3>Sized buttons</h3>
+          <section class="sg-buttons">
+          <button class="btn btn-default btn-xs ripple">btn-xs</button><button class="btn btn-default btn-sm ripple">btn-sm</button><button class="btn btn-default ripple">normal</button><button class="btn btn-default btn-lg ripple">btn-lg</button><br>
+          </section>
+
+          <h2>Flexbox grid</h2>
+
+          <section class="flexrow flexrow--gutter sg-grid">
+            <article class="flex-sm-6 flex-md-4">
+              FLEX 1
+            </article>
+            <article class="flex-sm-6 flex-md-4">
+              FLEX 2
+            </article>
+            <article class="flex-sm-6 flex-md-4">
+              FLEX 3
+            </article>
+            <article class="flex-sm-6 flex-md-4">
+              FLEX 4
+            </article>
+          </section>
+
+
+          <h2>Layout</h2>
+
+          <h3>Fixed ratio blocks</h3>
+          <section class="sg-fixed-ratios flexrow flexrow--gutter">
+            <artcile class="flex-sm-6 flex-md-4">
+              <h4>.fixed-ratio–1by1</h4>
+              <div class="fixed-ratio fixed-ratio--1by1"></div>
+            </artcile>
+            <artcile class="flex-sm-6 flex-md-4">
+              <h4>.fixed-ratio–4by3</h4>
+              <div class="fixed-ratio fixed-ratio--4by3"></div>
+            </artcile>
+            <artcile class="flex-sm-6 flex-md-4">
+              <h4>.fixed-ratio–16by9</h4>
+              <div class="fixed-ratio fixed-ratio--16by9"></div>
+            </artcile>
+          </section>
+
+          <h3>Capped width</h3>
+          <img class="capped-width" src="http://www.pets4homes.co.uk/images/articles/1646/large/kitten-emergencies-signs-to-look-out-for-537479947ec1c.jpg">
+
+        </div>
+      </main>
+
+      <aside class="site-aside">
+			</aside>
+
+      <footer class="site-footer">
+        <section class="wrapper wrapper--pre-footer">
+          <div class="container">
+            <div class="pre-footer">[PRE-FOOTER]</div>
+          </div>
+        </section>
+        <section class="wrapper wrapper--footer">
+          <div class="container">
+            <div class="footer">[FOOTER]</div>
+        </section>
+        <section class="wrapper wrapper--post-footer">
+          <div class="container">
+            <div class="post-footer">[POST-FOOTER]</div>
+          </div>
+        </section>
+      </footer>
+
+    </div>
+
+  <!-- DEBUG ZONE -->
+  <div class="debug-zone">
+    <div class="debug-zone__item debug-zone__item--bp"></div>
+  </div>
+
+  <script src="dist/js/main.js"></script>
+
+  </body>
+</html>

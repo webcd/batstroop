@@ -1,0 +1,26 @@
+/* STICKY HEADER */
+
+/*body*/.sticky-header {
+
+  .site-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: $navbar-height-mobile;
+    @include shadow(1);
+    z-index: 20000;  // TODO: better!
+
+    @include bp('expanded') {
+      height: $navbar-height-desktop;
+    }
+  }
+
+  .site-content{
+    padding-top: $navbar-height-mobile; // collapse btns increase height
+
+    @include bp('expanded') {
+      padding-top: $navbar-height-desktop + $topbar-height-desktop;
+    }
+  }
+
+}

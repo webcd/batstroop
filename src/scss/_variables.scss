@@ -1,0 +1,154 @@
+////////////////////////////////////////////////////////////////////////////////
+// NEW VARIABLES
+
+// GUTTER
+
+$gutter:                     2.4rem;
+
+@import "lib/gutter";
+
+
+// COLORS
+
+$color-primary:               #428bca !default;
+$color-secondary:             #f80 !default;
+$color-ternary:               #80f !default;
+
+$color-variation-ratio-base:  10% !default;
+$color-variation-ratio-more:  20% !default;
+$color-variation-ratio-most:  30% !default;
+
+@import "lib/colors";
+
+
+// NAVBAR CONFIGURATION => TODO: REFUCKTORING!
+
+$header-color-bg:             $gray-darker;
+
+$navbar-menu-mobile-width:    15em !default;
+
+$adminbar-height-mobile:      4.5rem !default;
+$adminbar-height-desktop:     3.2rem !default;
+
+$navbar-height-mobile:        6rem !default;
+$navbar-height-desktop:       $navbar-height-mobile !default;
+$topbar-height-mobile:        6rem !default;
+$topbar-height-desktop:       $topbar-height-mobile !default;
+
+$topbars-total-height:        $navbar-height-mobile + $topbar-height-mobile;
+
+$navbar-btn-size:             4.4rem !default;
+
+$navbar-brand-width:          auto !default;
+$navbar-brand-height:         $navbar-btn-size !default;
+
+
+// TYPOGRAPHY
+
+$font-family-sans-serif:      "Work Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-serif:           "Lora", Georgia, "Times New Roman", Times, serif !default;
+//** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
+$font-family-monospace:       Menlo, Monaco, Consolas, "Courier New", monospace !default;
+$font-family-base:            $font-family-sans-serif !default;
+
+$line-height-base:            1.5 !default; // 24px (same as gutter)
+$line-height-small:           1.25 !default;
+$line-height-large:           1.75 !default;
+
+$font-size-base:              1.6rem !default;
+$font-size-large:             2rem !default;
+$font-size-small:             1.4rem !default;
+
+$font-size-h1:                4rem !default;
+$font-size-h2:                3.2rem !default;
+$font-size-h3:                2.4rem !default;
+$font-size-h4:                $font-size-large !default;
+$font-size-h5:                $font-size-base !default;
+$font-size-h6:                $font-size-small !default;
+
+$font-weight-h1:              bold !default;
+$font-weight-h2:              bold !default;
+$font-weight-h3:              bold !default;
+$font-weight-h4:              bold !default;
+$font-weight-h5:              bold !default;
+$font-weight-h6:              bold !default;
+
+$color-h1:                    $gray-darkest !default;
+$color-h2:                    $gray-darkest !default;
+$color-h3:                    $gray-darkest !default;
+$color-h4:                    $gray-darkest !default;
+$color-h5:                    $gray-darkest !default;
+$color-h6:                    $gray-darkest !default;
+
+
+// MISC / BOOTSTRAP LEGACY
+
+
+$padding-xs-vertical:         $gutter-eighth !default;
+$padding-small-vertical:      $gutter-eighth * 1.5 !default;
+$padding-base-vertical:       $gutter-eighth * 2 !default;
+$padding-large-vertical:      $gutter-eighth * 3 !default;
+
+$padding-xs-horizontal:       $gutter-quarter !default;
+$padding-small-horizontal:    $gutter-quarter * 1.5 !default;
+$padding-base-horizontal:     $gutter-quarter * 2 !default;
+$padding-large-horizontal:    $gutter-quarter * 3 !default;
+
+$border-radius-base:          0.25rem !default;
+$border-radius-large:         1.4142 * $border-radius-base !default;
+$border-radius-small:         $border-radius-base / 1.4142 !default;
+$border-radius-xs:            $border-radius-base / 2 !default;
+
+
+// BUTTONS
+
+$btn-border-radius-xs:        border-radius-xs !default;
+$btn-border-radius-small:     border-radius-small !default;
+$btn-border-radius:           $border-radius-base !default;
+$btn-border-radius-large:     $border-radius-large !default;
+
+$btn-font-weight:             bold !default;
+$btn-text-transform:          uppercase !default;
+
+$btn-default-color:           $gray !default;
+$btn-default-bg:              $gray-lighter !default;
+$btn-default-border:          $gray-light !default;
+
+// FORMS
+
+$input-bg:                    #fff !default;
+$input-border:                #ccc !default;
+$input-color-placeholder:     #999 !default;
+
+
+// LAYOUT
+
+// Common screen sizes, in em unit (1em = 16px, browser default font-size)
+//          in em    in px
+// 'xxs':   20em,    // 320
+// 'xs':    30em,    // 480
+// 's':     40em,    // 640
+// 'sm':    48em,    // 768
+// 'm':     60em,    // 960
+// 'ml':    64em,    // 1024
+// 'l':     75em,    // 1200
+// 'xl':    90em,    // 1440
+// 'xxl':   100em,   // 1600
+// 'xxxl':  120em    // 1920
+
+$screen-xs:                   30em !default;    // 480px
+$screen-sm:                   48em !default;    // 768px
+$screen-md:                   62em !default;    // 992px
+$screen-lg:                   75em !default;    // 1200px
+
+$grid-float-breakpoint:       $screen-sm !default;
+
+// Container
+
+$container-sm:                (72rem + $gutter-half) !default;
+$container-md:                (94rem + $gutter-half) !default;
+$container-lg:                (114rem + $gutter-half) !default;
+
+// Capped width
+
+$capped-max-width:             48rem !default;
